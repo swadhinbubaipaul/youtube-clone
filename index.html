@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <!-- Put posion absolute inside position relative -->
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="channel-pictures/my-channel.jpg"
+        />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-1.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Ram Siya Ram (Lyrical) Adipurush | Prabhas
+              </p>
+              <p class="video-author">T-Series</p>
+              <p class="video-stats">7.1M views &middot 9 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-2.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Gadar 2 Teaser | In Cinemas 11th August</p>
+              <p class="video-author">Zee Studios</p>
+              <p class="video-stats">24M views &middot; 4 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+            <div class="video-time">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-3.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Amazon 4k - The World’s Largest Tropical Rainforest Part 2
+              </p>
+              <p class="video-author">Scenic Scenes</p>
+              <p class="video-stats">23M views &middot 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+            <div class="video-time">22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-4.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Nothing Studio Tour Ft. Nothing Founder Carl Pei !
+              </p>
+              <p class="video-author">Tech Burner</p>
+              <p class="video-stats">1.3M views &middot; 3 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
+            <div class="video-time">11:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-5.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Introducing Apple Vision Pro</p>
+              <p class="video-author">Apple</p>
+              <p class="video-stats">50M views &middot 11 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+            <div class="video-time">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-6.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">$1 vs $1,000,000,000 Yacht!</p>
+              <p class="video-author">MrBeast</p>
+              <p class="video-stats">95M views &middot; 6 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-7.webp" />
+            <div class="video-time">10:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-7.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                The Future of Smartphones with Google’s CEO
+              </p>
+              <p class="video-author">Mrwhosetheboss</p>
+              <p class="video-stats">4.8M views &middot; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-8.webp" />
+            <div class="video-time">7:12</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-8.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Garmi Ke Side-Effects | Ashish Chanchlani
+              </p>
+              <p class="video-author">ashish chanchlani vines</p>
+              <p class="video-stats">75M views &middot; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-9.webp" />
+            <div class="video-time">13:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-9.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Maggi Will Never Be The Same Again</p>
+              <p class="video-author">Slayy Point</p>
+              <p class="video-stats">34M views &middot; 3 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-10.webp" />
+            <div class="video-time">7:53</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-10.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Kya Gunda Banega Re Tu | Phir Hera Pheri | Akshay Kumar, Suniel
+                Shetty...
+              </p>
+              <p class="video-author">Ajay और Akshay</p>
+              <p class="video-stats">14M views &middot; 7 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-11.webp" />
+            <div class="video-time">4:10</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-11.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                RJ Naved ने Kapil के साथ मिलकर किसको बनाया 'मुर्गा' ? | The
+                Kapil Sharma Show 2 ...
+              </p>
+              <p class="video-author">SET India</p>
+              <p class="video-stats">2.2M views &middot; 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-12.webp" />
+            <div class="video-time">4:51</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-12.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">7 Awesome Gadgets for Home!</p>
+              <p class="video-author">Beebom</p>
+              <p class="video-stats">736K views &middot; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
